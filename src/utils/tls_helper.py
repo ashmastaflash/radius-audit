@@ -15,7 +15,7 @@ from scapy.layers.tls.record import TLS, TLSAlert
 from scapy.layers.tls.record import _tls_alert_level, _tls_alert_description
 from scapy.layers.tls.record_sslv2 import SSLv2
 from scapy.layers.tls.handshake_sslv2 import SSLv2ClientHello
-from scapy.layers.tls.crypto.pkcs1 import randstring
+from scapy.utils import randstring
 from scapy.layers.tls.extensions import TLS_Ext_SessionTicket
 
 from src.utils.log import g_exception_logger
