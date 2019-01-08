@@ -1,6 +1,8 @@
 ﻿*radius-audit* - A RADIUS authentication server audit tool
 ================
 
+**Please be advised that [ANSSI-FR/audit-radius](https://github.com/ANSSI-FR/audit-radius) is no longer maintained.**
+
 *radius-audit* allows to conduct configuration audits of RADIUS ([RFC 2865](https://tools.ietf.org/html/rfc2865)) servers setup as authentication servers in a [802.1X](http://standards.ieee.org/getieee802/download/802.1X-2004.pdf) environment.
 
 More specifically, *radius-audit* can help auditing the TLS ([RFC 5246](https://tools.ietf.org/html/rfc5246)) configuration of a RADIUS server, as well as discovering authorized EAP ([RFC 3748](https://tools.ietf.org/html/rfc3748)) authentication methods. It can be used by network or system administrators to check the configuration of a RADIUS server, or by pentesters conducting a security audit.
