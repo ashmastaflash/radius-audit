@@ -3,7 +3,7 @@
 
 **Please be advised that [ANSSI-FR/audit-radius](https://github.com/ANSSI-FR/audit-radius) is no longer maintained.**
 
-*radius-audit* allows to conduct configuration audits of RADIUS ([RFC 2865](https://tools.ietf.org/html/rfc2865)) servers setup as authentication servers in a [802.1X](http://standards.ieee.org/getieee802/download/802.1X-2004.pdf) environment.
+*radius-audit* allows to conduct configuration audits of RADIUS ([RFC 2865](https://tools.ietf.org/html/rfc2865)) servers setup as authentication servers in a [802.1X](https://ieeexplore.ieee.org/document/1438730) environment.
 
 More specifically, *radius-audit* can help auditing the TLS ([RFC 5246](https://tools.ietf.org/html/rfc5246)) configuration of a RADIUS server, as well as discovering authorized EAP ([RFC 3748](https://tools.ietf.org/html/rfc3748)) authentication methods. It can be used by network or system administrators to check the configuration of a RADIUS server, or by pentesters conducting a security audit.
 
@@ -207,7 +207,7 @@ ra -iface eth0 --discover-phase-1 --json-output
 
 ### How to speed up the scanning process  ?
 
-An administrator may be able to tune the timers available on the authenticator (switch, Wi-Fi access point) or on the server. For example, the *quietPeriod* timer value on the authenticators may be decreased in order to speed up the process (for more information, one can read the [IEEE Std 802.1X-2004](http://standards.ieee.org/getieee802/download/802.1X-2004.pdf) standard). On Cisco switches, the following command, applied to an interface, allows to decrease the *quietPeriod* to 1 second.
+An administrator may be able to tune the timers available on the authenticator (switch, Wi-Fi access point) or on the server. For example, the *quietPeriod* timer value on the authenticators may be decreased in order to speed up the process (for more information, one can read the [IEEE Std 802.1X-2004](https://ieeexplore.ieee.org/document/1438730) standard). On Cisco switches, the following command, applied to an interface, allows to decrease the *quietPeriod* to 1 second.
 
 ```
 sw(config-if)# dot1x timeout quiet-period 1
