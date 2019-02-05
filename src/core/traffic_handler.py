@@ -770,7 +770,7 @@ anymore.", self._bssid)
                                     WiFiTrafficHandler.AUTH_STATUS_AUTHENTICATING
                             else:
                                 g_default_logger.warning("Could not \
-authenticate")
+authenticate.")
 
                 i = i + 1
 
